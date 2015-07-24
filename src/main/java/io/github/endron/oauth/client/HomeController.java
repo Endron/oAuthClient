@@ -1,4 +1,4 @@
-package io.github.endron.oauththing;
+package io.github.endron.oauth.client;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
