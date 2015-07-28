@@ -1,8 +1,7 @@
 FROM java:8
 
-ADD build/distributions/oAuthClient.tar /
-RUN chmod +x /oAuthClient/bin/oAuthClient
+ADD ./build/libs/oAuthClient*.jar /app.jar
 
 EXPOSE 8080
 
-CMD ["/oAuthClient/bin/oAuthClient"]
+CMD ["java", "-jar", "-Djava.security.egd=file:/dev/urandom", "-Xmx256m", "/app.jar"]
