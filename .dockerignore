@@ -1,11 +1,2 @@
-.gradle/
-.idea/
-build/classes/
-build/dependency-cache/
-build/distributions/
-build/libs/*.jar.orginal
-build/resources/
-build/scripts/
-build/tmp/
-gradle/
-src/
+*
+!build/libs/*.jar
